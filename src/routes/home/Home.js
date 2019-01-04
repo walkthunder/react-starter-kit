@@ -29,7 +29,7 @@ class Home extends React.Component {
         <div className={s.container}>
           <h1>React.js News</h1>
           {this.props.news.map(item => (
-            <article key={item.link} className={s.newsItem}>
+            <article key={`${item.link}-${item.title}`} className={s.newsItem}>
               <h1 className={s.newsTitle}>
                 <a href={item.link}>{item.title}</a>
               </h1>

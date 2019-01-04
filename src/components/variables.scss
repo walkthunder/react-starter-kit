@@ -1,0 +1,91 @@
+/*
+ * Colors
+ * ========================================================================== */
+
+$white-base: hsl(255, 255, 255);
+$gray-darker: color(black lighten-2);  /* #222 */
+$gray-dark: color(black lighten-3);      /* #404040 */
+$gray: color(black lighten-3);         /* #555 */
+$gray-light: color(black lighten-4);   /* #777 */
+$gray-lighter: color(black lighten-5); /* #eee */
+
+/*
+ * Typography
+ * ========================================================================== */
+
+$font-family-base: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Microsoft YaHei', 'HelveticaNeue-Light', sans-serif;
+$font-weight-base: 500;
+
+/*
+ * Layout
+ * ========================================================================== */
+
+$max-content-width: 1000px;
+
+/*
+ * Media queries breakpoints
+ * ========================================================================== */
+
+$screen-xs-min: 480px;  /* Extra small screen / phone */
+$screen-sm-min: 768px;  /* Small screen / tablet */
+$screen-md-min: 992px;  /* Medium screen / desktop */
+$screen-lg-min: 1200px; /* Large screen / wide desktop */
+
+// color profolio
+$qt-green: #6cc149;
+$qt-skin: #fefaec;
+
+$qt-red: #e13430;
+$qt-red-trp: #e96764;
+
+$qt-red-l: rgba(243, 129, 129, 0.5);
+$qt-red-ll: rgba(243, 129, 129, 0.1);
+$qt-orange: #f79668;
+$qt-blue: #4a90e2;
+$qt-blue-d: #3353a5;
+$qt-white: rgba(255, 255, 255, 1);
+$qt-bg: #f5f5f8;
+$qt-header: #fff;
+$qt-home-img: rgba(50, 36, 48, 0.6);
+
+$qt-brown: #625772;
+$qt-brown-g: rgba(98, 87, 114, 0.7);
+$qt-brown-l: rgba(98, 87, 114, 0.3);
+$qt-brown-ll: rgba(98, 87, 114, 0.1);
+$qt-orange: #ff9800;
+
+$qt-header-width: 1052px;
+$qt-width: 1002px;
+$qt-grey-5: rgba(0, 0, 0, 0.5);
+$qt-grey-2: rgba(0, 0, 0, 0.2);
+
+$qt-title: 22px;
+$qt-title-1: 18px;
+$qt-paging: 18px;
+$qt-sub-title: 16px;
+$qt-content: 14px;
+$qt-info: 12px;
+$qt-tag: 10px;
+
+$qt-border: #cdcccd;
+$qt-dashed-border: #dcdee3;
+
+$qt-txt-grey: #9b9b9b;
+$qt-txt-grey-1: #c3c3c3;
+
+$qt-text: #3d3d3d;
+$qt-text-1: #606060;
+$qt-text-2: #686868;
+$qt-text-3: #666;
+
+$qt-home-bg: #f5f5f8;
+
+$qt-border-page: rgba(155, 154, 155, 0.5);
+$qt-border-1: #dcdee3;
+$qt-border-2: #ccc;
+$qt-border-3: #e3e3e3;
+$qt-border-4: #ddd;
+
+$qt-btn-hover: #f2f2f5;
+$qt-top: #999;
+$qt-overlay: rgba(61, 61, 61, 0.3);

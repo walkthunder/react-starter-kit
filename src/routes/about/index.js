@@ -8,19 +8,14 @@
  */
 
 import React from 'react';
-import Layout from '../../components/Layout';
-import Page from '../../components/Page';
+import AboutPage from './AboutPage';
 import about from './about.md';
 
 function action() {
   return {
     chunks: ['about'],
     title: about.title,
-    component: (
-      <Layout>
-        <Page {...about} />
-      </Layout>
-    ),
+    component: <AboutPage />,
   };
 }
 

@@ -1,0 +1,116 @@
+@import '../../components/variables.scss';
+
+.root {
+  background: $qt-bg;
+}
+
+.container {
+  width: $qt-width;
+  margin: 15px auto 20px;
+  padding: 20px;
+  max-width: $max-content-width;
+  background: white;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+.about {
+}
+
+.title {
+  font-size: $qt-title;
+  text-align: center;
+
+  > div {
+    display: inline-block;
+    padding-bottom: 3px;
+    border-bottom: 5px solid $qt-border-4;
+  }
+}
+
+.content {
+  font-size: $qt-content;
+  line-height: 24px;
+  margin-top: 28px;
+
+  .qt {
+    font-size: $qt-sub-title;
+    color: $qt-red;
+  }
+}
+
+.features {
+  font-size: $qt-content;
+  margin-top: 28px;
+
+  li {
+    margin-bottom: 8px;
+
+    > div {
+      display: inline-block;
+      vertical-align: bottom;
+    }
+  }
+
+  .subTitle {
+    margin-bottom: 12px;
+    font-size: $qt-sub-title;
+  }
+}
+
+.bullet {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: $qt-red;
+  color: $qt-white;
+  border-radius: 10px;
+  // padding-left: 6px;
+  text-align: center;
+  box-sizing: border-box;
+  margin-right: 8px;
+}
+
+.contact {
+  margin-top: 60px;
+}
+
+.contacts {
+  margin: 50px 0;
+
+  li {
+    display: inline-block;
+    width: 33%;
+    margin-bottom: 50px;
+  }
+
+  li > div {
+    display: inline-block;
+  }
+
+  .kind {
+    font-size: $qt-title;
+  }
+
+  .mail {
+    color: $qt-text-3;
+  }
+
+  :global .sprite {
+    margin-right: 20px;
+  }
+}
+
+.map {
+
+}
+
+.saddr {
+  color: $qt-text-3;
+
+  > div {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 7px;
+  }
+}

@@ -98,9 +98,6 @@ const config = {
                 debug: false,
               },
             ],
-            // Experimental ECMAScript proposals
-            // https://babeljs.io/docs/plugins/#presets-stage-x-experimental-presets-
-            ['@babel/preset-stage-2', { decoratorsLegacy: true }],
             // Flow
             // https://github.com/babel/babel/tree/master/packages/babel-preset-flow
             '@babel/preset-flow',
@@ -181,10 +178,10 @@ const config = {
           // Compile Sass to CSS
           // https://github.com/webpack-contrib/sass-loader
           // Install dependencies before uncommenting: yarn add --dev sass-loader node-sass
-          // {
-          //   test: /\.(scss|sass)$/,
-          //   loader: 'sass-loader',
-          // },
+          {
+            test: /\.(scss|sass)$/,
+            loader: 'sass-loader',
+          },
         ],
       },
 
@@ -419,21 +416,20 @@ const serverConfig = {
           ...rule,
           options: {
             ...rule.options,
-            presets: rule.options.presets.map(
-              preset =>
-                preset[0] !== '@babel/preset-env'
-                  ? preset
-                  : [
-                      '@babel/preset-env',
-                      {
-                        targets: {
-                          node: pkg.engines.node.match(/(\d+\.?)+/)[0],
-                        },
-                        modules: false,
-                        useBuiltIns: false,
-                        debug: false,
+            presets: rule.options.presets.map(preset =>
+              preset[0] !== '@babel/preset-env'
+                ? preset
+                : [
+                    '@babel/preset-env',
+                    {
+                      targets: {
+                        node: pkg.engines.node.match(/(\d+\.?)+/)[0],
                       },
-                    ],
+                      modules: false,
+                      useBuiltIns: false,
+                      debug: false,
+                    },
+                  ],
             ),
           },
         };

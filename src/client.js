@@ -13,7 +13,7 @@ import ReactDOM from 'react-dom';
 import deepForceUpdate from 'react-deep-force-update';
 import queryString from 'query-string';
 import { createPath } from 'history/PathUtils';
-import App from './components/App';
+import App from './components/App/App';
 import createFetch from './createFetch';
 import history from './history';
 import { updateMeta } from './DOMUtils';
@@ -123,12 +123,6 @@ async function onLocationChange(location, action) {
         // or scroll to the given #hash anchor
         // or scroll to top of the page
         window.scrollTo(scrollX, scrollY);
-
-        // Google Analytics tracking. Don't send 'pageview' event after
-        // the initial rendering, as it was already sent
-        if (window.ga) {
-          window.ga('send', 'pageview', createPath(location));
-        }
       },
     );
   } catch (error) {

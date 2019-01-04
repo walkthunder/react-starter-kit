@@ -10,10 +10,14 @@
 /* eslint-disable max-len */
 
 if (process.env.BROWSER) {
+  /*
   throw new Error(
     'Do not import `config.js` from inside the client-side code.',
   );
+  */
 }
+
+const isStaging = ((typeof window !== 'undefined') && (window.location.host.indexOf('staging') > -1))
 
 module.exports = {
   // Node.js app
@@ -68,4 +72,31 @@ module.exports = {
         'KTZ6cxoKnEakQCeSpZlaUCJWGAlTEBJj0y2EMkUBujA7zWSvaQ',
     },
   },
+  constant: {
+    ProgramListPageSize: 10,
+    AlbumProgramPageSize: 10,
+    SearchPageSize: 12,
+    ProgramCurrentPageSize: 10,
+    RecomPageSize: 10,
+    domain: isStaging ? 'http://i.staging.qingting.fm/' : 'http://i.qingting.fm/',
+    host_ip: '//ip.qingting.fm/',
+    // domain: 'http://10.117.220.123',
+    host: isStaging ? 'http://i.staging.qingting.fm/wapi/' : 'http://i.qingting.fm/wapi/',
+    // host: 'http://10.117.220.123/wapi/',
+    host_v6: 'http://api2.qingting.fm/v6/media/',
+    host_wsq: 'http://qtime.qingting.fm/api/v1/wsq/',
+    host_meta: 'http://10.28.147.226/', // Intranet ip address, only accessable from intranet network
+    host_rapi: 'http://rapi.qingting.fm/',
+    host_capi: isStaging ? 'http://i.staging.qingting.fm/capi/' : 'http://i.qingting.fm/capi/',
+    host_dapi: 'http://d.qingting.fm/capi/',
+    host_u2: '//u2.qingting.fm/',
+    host_u2_stg: '//u2.staging.qingting.fm/',
+    host_pay: 'https://pay.qingting.fm/',
+    defaultProgramMap: {
+        '上海市': 274
+    },
+    defaultPodcaster: '4e44a2268f9901d970d49f6206f20f7a',
+    gotoThreshold: 10,
+    defaultRecCategories: [521, 3251, 523, 531, 1585, 529]
+  }
 };

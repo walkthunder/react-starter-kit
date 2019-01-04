@@ -32,6 +32,7 @@ module.exports = {
   },
 
   rules: {
+    'jsx-a11y/click-events-have-key-events': 0,
     // Forbid the use of extraneous packages
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md
     'import/no-extraneous-dependencies': ['error', { packageDir: '.' }],

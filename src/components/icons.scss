@@ -1,0 +1,977 @@
+:global {
+  .sprite {
+    background-image: url('//sss.qingting.fm/neo/sprite.png');
+    display: inline-block;
+  }
+
+  .sprite2 {
+    background-image: url('//sss.qingting.fm/neo/sprite2.png');
+    display: inline-block;
+  }
+
+  .sprite4 {
+    background-image: url('//sss.qingting.fm/neo/sprite4.png');
+    display: inline-block;
+  }
+
+  .sprite5 {
+    background-image: url('//sss.qingting.fm/neo/Close@2x.png');
+    width: 37px;
+    height: 37px;
+    background-size: contain;
+    display: inline-block;
+  }
+
+  @media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+    .sprite {
+      background-image: url('//sss.qingting.fm/neo/sprite@2x.png');
+      background-size: 2527px 170px;
+    }
+    .sprite2 {
+      background-image: url('//sss.qingting.fm/neo/sprite2@2x.png');
+      background-size: 656px 42px;
+    }
+    .sprite4 {
+      background-image: url('//sss.qingting.fm/neo/sprite4@2x.png');
+      background-size: 1547px 42px;
+    }
+    .sprite5 {
+      background-image: url('//sss.qingting.fm/neo/Close@3x.png');
+      width: 37px;
+      height: 37px;
+      background-size: contain;
+
+    }
+  }
+
+.sprite4-caijing {
+    width: 26px;
+    height: 26px;
+    background-position: -5px -5px;
+}
+
+.sprite4-changxiaoxiaoshuo {
+    width: 26px;
+    height: 26px;
+    background-position: -41px -5px;
+}
+
+.sprite4-diantai {
+    width: 26px;
+    height: 26px;
+    background-position: -77px -5px;
+}
+
+.sprite4-dianying {
+    width: 26px;
+    height: 26px;
+    background-position: -113px -5px;
+}
+
+.sprite4-ertong {
+    width: 26px;
+    height: 26px;
+    background-position: -149px -5px;
+}
+
+.sprite4-gaoxiao {
+    width: 26px;
+    height: 26px;
+    background-position: -185px -5px;
+}
+
+.sprite4-gongkaike {
+    width: 26px;
+    height: 26px;
+    background-position: -221px -5px;
+}
+
+.sprite4-guangboju {
+    width: 26px;
+    height: 26px;
+    background-position: -257px -5px;
+}
+
+.sprite4-jiankang {
+    width: 26px;
+    height: 26px;
+    background-position: -293px -5px;
+}
+
+.sprite4-jiaoyu {
+    width: 26px;
+    height: 26px;
+    background-position: -329px -5px;
+}
+
+.sprite4-jingpin {
+    width: 26px;
+    height: 26px;
+    background-position: -365px -5px;
+}
+
+.sprite4-jingpinneirong {
+    width: 26px;
+    height: 26px;
+    background-position: -401px -5px;
+}
+
+.sprite4-junshi {
+    width: 26px;
+    height: 26px;
+    background-position: -437px -5px;
+}
+
+.sprite4-keji {
+    width: 26px;
+    height: 26px;
+    background-position: -473px -5px;
+}
+
+.sprite4-lishi {
+    width: 26px;
+    height: 26px;
+    background-position: -509px -5px;
+}
+
+.sprite4-lvyou {
+    width: 26px;
+    height: 26px;
+    background-position: -545px -5px;
+}
+
+.sprite4-moren {
+    width: 30px;
+    height: 30px;
+    background-position: -581px -5px;
+}
+
+.sprite4-nvxing {
+    width: 26px;
+    height: 26px;
+    background-position: -621px -5px;
+}
+
+.sprite4-pingshu {
+    width: 26px;
+    height: 26px;
+    background-position: -657px -5px;
+}
+
+.sprite4-pinpaidiantai {
+    width: 26px;
+    height: 26px;
+    background-position: -693px -5px;
+}
+
+.sprite4-qiche {
+    width: 26px;
+    height: 26px;
+    background-position: -729px -5px;
+}
+
+.sprite4-qinggan {
+    width: 26px;
+    height: 26px;
+    background-position: -765px -5px;
+}
+
+.sprite4-qr-icon {
+    width: 32px;
+    height: 32px;
+    background-position: -801px -5px;
+}
+
+.sprite4-shishang {
+    width: 26px;
+    height: 26px;
+    background-position: -843px -5px;
+}
+
+.sprite4-titleaarow {
+    width: 9px;
+    height: 14px;
+    background-position: -879px -5px;
+}
+
+.sprite4-tiyu {
+    width: 26px;
+    height: 26px;
+    background-position: -898px -5px;
+}
+
+.sprite4-top {
+    width: 32px;
+    height: 32px;
+    background-position: -934px -5px;
+}
+
+.sprite4-toutiao {
+    width: 26px;
+    height: 26px;
+    background-position: -976px -5px;
+}
+
+.sprite4-tuokouxiu {
+    width: 26px;
+    height: 26px;
+    background-position: -1012px -5px;
+}
+
+.sprite4-waiyu {
+    width: 26px;
+    height: 26px;
+    background-position: -1048px -5px;
+}
+
+.sprite4-wenhua {
+    width: 26px;
+    height: 26px;
+    background-position: -1084px -5px;
+}
+
+.sprite4-xiangsheng {
+    width: 26px;
+    height: 26px;
+    background-position: -1120px -5px;
+}
+
+.sprite4-xiaoshuo {
+    width: 26px;
+    height: 26px;
+    background-position: -1156px -5px;
+}
+
+.sprite4-xiaoshuohuiyuan {
+    width: 26px;
+    height: 26px;
+    background-position: -1192px -5px;
+}
+
+.sprite4-xiaoyuan {
+    width: 26px;
+    height: 26px;
+    background-position: -1228px -5px;
+}
+
+.sprite4-xiqu {
+    width: 26px;
+    height: 26px;
+    background-position: -1264px -5px;
+}
+
+.sprite4-yingshi {
+    width: 26px;
+    height: 26px;
+    background-position: -1300px -5px;
+}
+
+.sprite4-yingwen {
+    width: 26px;
+    height: 26px;
+    background-position: -1336px -5px;
+}
+
+.sprite4-yinyue {
+    width: 26px;
+    height: 26px;
+    background-position: -1372px -5px;
+}
+
+.sprite4-youxidongman {
+    width: 26px;
+    height: 26px;
+    background-position: -1408px -5px;
+}
+
+.sprite4-yule {
+    width: 26px;
+    height: 26px;
+    background-position: -1444px -5px;
+}
+
+.sprite4-zhongguozhisheng {
+    width: 26px;
+    height: 26px;
+    background-position: -1480px -5px;
+}
+
+.sprite4-zimeiti {
+    width: 26px;
+    height: 26px;
+    background-position: -1516px -5px;
+}
+
+.sprite2-QRicon {
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+.sprite2-QRicon-selected {
+    width: 32px;
+    height: 32px;
+    background-position: -32px 0;
+}
+
+.sprite2-change {
+    width: 18px;
+    height: 14px;
+    background-position: -64px 0;
+}
+
+.sprite2-classify {
+    width: 34px;
+    height: 34px;
+    background-position: -82px 0;
+}
+
+.sprite2-classify-selected {
+    width: 34px;
+    height: 34px;
+    background-position: -116px 0;
+}
+
+.sprite2-feedback {
+    width: 32px;
+    height: 32px;
+    background-position: -150px 0;
+}
+
+.sprite2-flag {
+    width: 34px;
+    height: 34px;
+    background-position: -182px 0;
+}
+
+.sprite2-flag-selected {
+    width: 34px;
+    height: 34px;
+    background-position: -216px 0;
+}
+
+.sprite2-left {
+    width: 11px;
+    height: 18px;
+    background-position: -250px 0;
+}
+
+.sprite2-left-hover {
+    width: 11px;
+    height: 18px;
+    background-position: -261px 0;
+}
+
+.sprite2-location {
+    width: 34px;
+    height: 34px;
+    background-position: -272px 0;
+}
+
+.sprite2-location-selected {
+    width: 34px;
+    height: 34px;
+    background-position: -306px 0;
+}
+
+.sprite2-more {
+    width: 14px;
+    height: 14px;
+    background-position: -340px 0;
+}
+
+.sprite2-old {
+    width: 32px;
+    height: 32px;
+    background-position: -354px 0;
+}
+
+.sprite2-play {
+    width: 42px;
+    height: 42px;
+    background-position: -386px 0;
+}
+
+.sprite2-playcount {
+    width: 7px;
+    height: 9px;
+    background-position: -428px 0;
+}
+
+.sprite2-pulldown {
+    width: 9px;
+    height: 6px;
+    background-position: -435px 0;
+}
+
+.sprite2-pulldown-selected {
+    width: 9px;
+    height: 6px;
+    background-position: -444px 0;
+}
+
+.sprite2-quit {
+    width: 37px;
+    height: 37px;
+    background-position: -453px 0;
+}
+
+.sprite2-right {
+    width: 11px;
+    height: 18px;
+    background-position: -490px 0;
+}
+
+.sprite2-right-hover {
+    width: 11px;
+    height: 18px;
+    background-position: -501px 0;
+}
+
+.sprite2-search {
+    width: 25px;
+    height: 26px;
+    background-position: -512px 0;
+}
+
+.sprite2-top {
+    width: 32px;
+    height: 32px;
+    background-position: -537px 0;
+}
+
+.sprite2-top-search {
+    width: 19px;
+    height: 20px;
+    background-position: -569px 0;
+}
+
+.sprite2-wifi {
+    width: 34px;
+    height: 34px;
+    background-position: -588px 0;
+}
+
+.sprite2-wifi-selected {
+    width: 34px;
+    height: 34px;
+    background-position: -622px 0;
+}
+
+  .sprite-default-albums {
+    width: 170px;
+    height: 170px;
+    background-position: 0 0;
+  }
+
+  .sprite-hot {
+    width: 38px;
+    height: 38px;
+    background-position: -170px 0;
+  }
+
+  .sprite-sina-hover {
+    width: 50px;
+    height: 50px;
+    background-position: -208px 0;
+  }
+
+  .sprite-telephone {
+    width: 42px;
+    height: 42px;
+    background-position: -258px 0;
+  }
+
+  .sprite-wechat-hover {
+    width: 50px;
+    height: 50px;
+    background-position: -300px 0;
+  }
+
+  .sprite-sina {
+    width: 50px;
+    height: 50px;
+    background-position: -350px 0;
+  }
+
+  .sprite-wechat {
+    width: 50px;
+    height: 50px;
+    background-position: -400px 0;
+  }
+
+  .sprite-default-avatar {
+    width: 50px;
+    height: 50px;
+    background-position: -450px 0;
+  }
+
+  .sprite-tencent-hover {
+    width: 46px;
+    height: 46px;
+    background-position: -500px 0;
+  }
+
+  .sprite-tencent {
+    width: 46px;
+    height: 46px;
+    background-position: -546px 0;
+  }
+
+  .sprite-radio-dj {
+    width: 42px;
+    height: 42px;
+    background-position: -592px 0;
+  }
+
+  .sprite-play-hover {
+    width: 50px;
+    height: 50px;
+    background-position: -634px 0;
+  }
+
+  .sprite-qq-hover {
+    width: 46px;
+    height: 46px;
+    background-position: -684px 0;
+  }
+
+  .sprite-player-play {
+    width: 50px;
+    height: 50px;
+    background-position: -730px 0;
+  }
+
+  .sprite-hr {
+    width: 42px;
+    height: 42px;
+    background-position: -780px 0;
+  }
+
+  .sprite-album {
+    width: 56px;
+    height: 56px;
+    background-position: -822px 0;
+  }
+
+  .sprite-pause-hover {
+    width: 50px;
+    height: 50px;
+    background-position: -878px 0;
+  }
+
+  .sprite-player-pause {
+    width: 50px;
+    height: 50px;
+    background-position: -928px 0;
+  }
+
+  .sprite-support {
+    width: 42px;
+    height: 42px;
+    background-position: -978px 0;
+  }
+
+  .sprite-appdownload-hover {
+    width: 50px;
+    height: 50px;
+    background-position: -1020px 0;
+  }
+
+  .sprite-qq  {
+    width: 46px;
+    height: 46px;
+    background-position: -1070px 0;
+  }
+
+  .sprite-business {
+    width: 42px;
+    height: 42px;
+    background-position: -1116px 0;
+  }
+
+  .sprite-live {
+    width: 42px;
+    height: 36px;
+    background-position: -1158px 0;
+  }
+
+  .sprite-appdownload {
+    width: 50px;
+    height: 50px;
+    background-position: -1200px 0;
+  }
+
+  .sprite-radio {
+    width: 56px;
+    height: 56px;
+    background-position: -1250px 0;
+  }
+
+  .sprite-marketing {
+    width: 42px;
+    height: 42px;
+    background-position: -1306px 0;
+  }
+
+  .sprite-history {
+    width: 38px;
+    height: 38px;
+    background-position: -1348px 0;
+  }
+
+  .sprite-buliding {
+    width: 84px;
+    height: 72px;
+    background-position: -1386px 0;
+  }
+
+  .sprite-location {
+    width: 16px;
+    height: 20px;
+    background-position: -1470px 0;
+  }
+
+  .sprite-homepage-search {
+    width: 22px;
+    height: 24px;
+    background-position: -1486px 0;
+  }
+
+  .sprite-volume {
+    width: 22px;
+    height: 22px;
+    background-position: -1508px 0;
+  }
+
+  .sprite-player-history {
+    width: 22px;
+    height: 22px;
+    background-position: -1530px 0;
+  }
+
+  .sprite-program {
+    width: 48px;
+    height: 26px;
+    background-position: -1552px 0;
+  }
+
+  .sprite-list-play-hover {
+    width: 20px;
+    height: 20px;
+    background-position: -1600px 0;
+  }
+
+  .sprite-top {
+    width: 30px;
+    height: 25px;
+    background-position: -1620px 0;
+  }
+
+  .sprite-mute {
+    width: 22px;
+    height: 22px;
+    background-position: -1650px 0;
+  }
+
+  .sprite-list-play {
+    width: 20px;
+    height: 20px;
+    background-position: -1694px 0;
+  }
+
+  .sprite-delete-hover {
+    width: 16px;
+    height: 16px;
+    background-position: -1714px 0;
+  }
+
+  .sprite-list-pause {
+    width: 20px;
+    height: 20px;
+    background-position: -1730px 0;
+  }
+
+  .sprite-volume-hover {
+    width: 22px;
+    height: 22px;
+    background-position: -1750px 0;
+  }
+
+  .sprite-big-halfstar {
+    width: 16px;
+    height: 16px;
+    background-position: -1772px 0;
+  }
+
+  .sprite-history-hover {
+    width: 22px;
+    height: 22px;
+    background-position: -1788px 0;
+  }
+
+  .sprite-empty-hover {
+    width: 16px;
+    height: 16px;
+    background-position: -1810px 0;
+  }
+
+  .sprite-listened {
+    width: 12px;
+    height: 12px;
+    background-position: -1826px 0;
+  }
+
+  .sprite-delete {
+    width: 16px;
+    height: 16px;
+    background-position: -1838px 0;
+  }
+
+  .sprite-list-share {
+    width: 16px;
+    height: 16px;
+    background-position: -1854px 0;
+  }
+
+  .sprite-popup-share {
+    width: 16px;
+    height: 16px;
+    background-position: -1870px 0;
+  }
+
+  .sprite-list-share-hover {
+    width: 16px;
+    height: 16px;
+    background-position: -1886px 0;
+  }
+
+  .sprite-share {
+    width: 16px;
+    height: 16px;
+    background-position: -1902px 0;
+  }
+
+  .sprite-mobile {
+    width: 16px;
+    height: 16px;
+    background: url(//sss.qingting.fm/neo/phone@2x.png);
+    background-size: contain;
+  }
+
+  .sprite-big-fillstar {
+    width: 16px;
+    height: 16px;
+    background-position: -1918px 0;
+  }
+
+  .sprite-change {
+    width: 14px;
+    height: 14px;
+    background-position: -1934px 0;
+  }
+
+  .sprite-big-graystar {
+    width: 16px;
+    height: 16px;
+    background-position: -1948px 0;
+  }
+
+  .sprite-share-hover {
+    width: 22px;
+    height: 22px;
+    background-position: -1964px 0;
+  }
+
+  .sprite-empty {
+    width: 16px;
+    height: 16px;
+    background-position: -1986px 0;
+  }
+
+  .sprite-popup-empty {
+    width: 16px;
+    height: 16px;
+    background-position: -2002px 0;
+  }
+
+  .sprite-player-previous-hover {
+    width: 15px;
+    height: 18px;
+    background-position: -2018px 0;
+  }
+
+  .sprite-player-next-hover {
+    width: 15px;
+    height: 18px;
+    background-position: -2033px 0;
+  }
+
+  .sprite-mute-hover {
+    width: 22px;
+    height: 22px;
+    background-position: -2048px 0;
+  }
+
+  .sprite-popup-share-hover {
+    width: 16px;
+    height: 16px;
+    background-position: -2070px 0;
+  }
+
+  .sprite-small-halfstar {
+    width: 12px;
+    height: 12px;
+    background-position: -2086px 0;
+  }
+
+  .sprite-popup-play {
+    width: 16px;
+    height: 16px;
+    background-position: -2098px 0;
+  }
+
+  .sprite-small-fillstar {
+    width: 12px;
+    height: 12px;
+    background-position: -2114px 0;
+  }
+
+  .sprite-small-graystar {
+    width: 12px;
+    height: 12px;
+    background-position: -2126px 0;
+  }
+
+  .sprite-popup-empty-hover {
+    width: 16px;
+    height: 16px;
+    background-position: -2138px 0;
+  }
+
+  .sprite-player-previous {
+    width: 15px;
+    height: 18px;
+    background-position: -2154px 0;
+  }
+
+  .sprite-player-download {
+    width: 22px;
+    height: 22px;
+    background-position: -2169px 0;
+  }
+
+  .sprite-download {
+    width: 16px;
+    height: 16px;
+    background-position: -2191px 0;
+  }
+
+  .sprite-list-download-hover {
+    width: 16px;
+    height: 16px;
+    background-position: -2207px 0;
+  }
+
+  .sprite-player-next {
+    width: 15px;
+    height: 18px;
+    background-position: -2223px 0;
+  }
+
+  .sprite-popup-download {
+    width: 16px;
+    height: 16px;
+    background-position: -2238px 0;
+  }
+
+  .sprite-list-download {
+    width: 16px;
+    height: 16px;
+    background-position: -2254px 0;
+  }
+
+  .sprite-play {
+    width: 16px;
+    height: 16px;
+    background-position: -2270px 0;
+  }
+
+  .sprite-download-hover {
+    width: 22px;
+    height: 22px;
+    background-position: -2286px 0;
+  }
+
+  .sprite-next {
+    width: 9px;
+    height: 15px;
+    background-position: -2308px 0;
+  }
+
+  .sprite-plays {
+    width: 12px;
+    height: 12px;
+    background-position: -2317px 0;
+  }
+
+  .sprite-popup-download-hover {
+    width: 16px;
+    height: 16px;
+    background-position: -2329px 0;
+  }
+
+  .sprite-previous {
+    width: 9px;
+    height: 15px;
+    background-position: -2345px 0;
+  }
+
+  .sprite-comments {
+    width: 10px;
+    height: 10px;
+    background-position: -2354px 0;
+  }
+
+  .sprite-list {
+    width: 22px;
+    height: 22px;
+    background-position: -2364px 0;
+  }
+
+  .sprite-list-hover {
+    width: 22px;
+    height: 22px;
+    background-position: -2386px 0;
+  }
+
+  .sprite-next-hover {
+    width: 10px;
+    height: 15px;
+    background-position: -2408px 0;
+  }
+
+  .sprite-line {
+    width: 1px;
+    height: 26px;
+    background-position: -2418px 0;
+  }
+
+  .sprite-previous-hover {
+    width: 10px;
+    height: 15px;
+    background-position: -2419px 0;
+  }
+
+  .sprite-pause {
+    width: 16px;
+    height: 16px;
+    background-position: -2429px 0;
+  }
+
+  .sprite-microphone {
+    width: 44px;
+    height: 44px;
+    background-position: -2444px 0
+  }
+}

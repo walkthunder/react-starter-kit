@@ -1,0 +1,551 @@
+@import '../variables.scss';
+
+.actionRoot {
+  margin: 0 auto;
+  font-size: $qt-content;
+  button {
+    padding: 6px 16px 8px 16px;
+    border-radius: 6px;
+    border: 1px solid $qt-border;
+    margin-right: 20px;
+    box-sizing: border-box;
+  }
+  button span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  :global .sprite {
+    margin-right: 5px;
+  }
+  :global .sprite-list-share-hover, :global .sprite-list-download-hover {
+    display: none;
+  }
+  .playBtn {
+    background: $qt-red;
+    border: 1px solid $qt-red;
+    color: $qt-white;
+  }
+  .playBtn:hover {
+    background: $qt-red-trp;
+    border: 1px solid $qt-red-trp;
+  }
+  .shareBtn, .downloadBtn, .mobileBtn {
+    span {
+      color: $qt-text-1;
+    }
+  }
+  .shareBtn:hover, .downloadBtn:hover, .mobileBtn:hover {
+    background: $qt-btn-hover;
+  }
+
+  .mobileBtn {
+    color:#FD5353;
+  }
+}
+
+.scrollTopRoot {
+  display: none;
+  position: fixed;
+  bottom: 130px;
+  right: 60px;
+  font-size: $qt-content;
+  text-align: center;
+  z-index: 999;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.04);
+  outline: none;
+  .top, .dep, .qr {
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    cursor: pointer;
+    background: white;
+    font-size: $qt-info;
+    outline: none;
+    &:hover {
+      background: $qt-red;
+    }
+  }
+  .top {
+    .top-pos {
+      position: relative;
+      top: 7px;
+      left: 7px;
+      width: 34px;
+      height: 34px;
+      background: url('//sss.qingting.fm/neo/sprites3/top@1x.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      @media
+        (-webkit-min-device-pixel-ratio: 1.5),
+        (min-resolution: 1.5dppx) {
+          background: url('//sss.qingting.fm/neo/sprites3/top@2x.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+    }
+    .top-neg {
+      display: none;
+      font-size: 12px;
+      color: #FFFFFF;
+      width: 26px;
+      height: 32px;
+      margin: 9px 11px;
+    }
+    &:hover {
+      .top-pos {
+        display: none;
+      }
+      .top-neg {
+        display: block;
+      }
+    }
+  }
+  .qr {
+    display: block;
+    border-top: 1px solid #EEEEEE;;
+    color: $qt-white;
+    .qr-icon {
+      position: relative;
+      top: 8px;
+      left: 8px;
+      width: 32px;
+      height: 32px;
+      background: url('//sss.qingting.fm/neo/sprites3/qr-icon@1x.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      @media
+        (-webkit-min-device-pixel-ratio: 1.5),
+        (min-resolution: 1.5dppx) {
+          background: url('//sss.qingting.fm/neo/sprites3/qr-icon@2x.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+    }
+    .show-qr {
+      display: none;
+      position: absolute;
+      left: -220px;
+      top: 0px;
+      background: #FFFFFF;
+      border: 1px solid #EEEEEE;
+      box-shadow: 0 0 4px 0 rgba(0,0,0,0.04);
+      padding: 20px;
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 110px;
+        right: -10px;
+        border-top: 5px solid transparent;
+        border-left: 5px solid $qt-white;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+      }
+    }
+    &:hover {
+      .show-qr {
+        display: block;
+      }
+    }
+  }
+  .dep {
+    display: block;
+    margin-top: 1px;
+    color: $qt-white;
+    >div {
+      position: relative;
+      top: 5px;
+    }
+  }
+
+}
+
+.QRCodeRoot {
+  display: none;
+  position: absolute;
+  top: 260px;
+  left: 1005px;
+  text-align: center;
+  z-index: 999;
+  img.bg {
+    width: 120px;
+  }
+  img.code {
+    position: absolute;
+    left: 24px;
+    top: 55px;
+    width: 73px;
+  }
+  >div {
+    font-size: $qt-info;
+    color: $qt-txt-grey;
+  }
+  .info {
+    position: relative;
+    top: -55px;
+  }
+}
+
+.shareOverlayRoot {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 9999;
+  background: $qt-overlay;
+  .container {
+    color: $qt-txt-grey;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .wrapper {
+    position: relative;
+    width: 424px;
+    margin: auto;
+    padding: 40px 0 20px 0;
+    border-radius: 7px;
+    background: $qt-white;
+    font-size: $qt-content;
+  }
+  .wrapper .title {
+    text-align: center;
+    margin-bottom: 24px;
+    letter-spacing: 0;
+
+    .t1 {
+      font-size: 18px;
+      color: #333333;
+      line-height: 18px;
+      margin-bottom: 5px;
+    }
+    .t2 {
+      font-size: 14px;
+      color: #9C9C9C;
+      line-height: 18px;
+    }
+  }
+  .wrapper .chargeTitle {
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 22px;
+    width: 360px;
+    margin: 0px 32px 32px 33px;
+  }
+  .wrapper .chargeTitle + img {
+    margin-bottom: 41px;
+    height: 200px;
+    width: 200px;
+  }
+
+  .shareDownloadWrapper {
+    position: relative;
+    width: 524px;
+    margin: auto;
+    padding: 40px 0 20px 0;
+    border-radius: 7px;
+    background: $qt-white;
+    font-size: $qt-content;
+  }
+
+  .shareDownloadWrapper .title {
+    text-align: center;
+    margin-bottom: 24px;
+    letter-spacing: 0;
+
+    .t1 {
+      font-size: 24px;
+      color: #F63D3D;
+      line-height: 24px;
+      margin-bottom: 5px;
+    }
+    .t2 {
+      font-size: 16px;
+      color: #777777;
+      text-align: center;
+      line-height: 24px;
+    }
+  }
+
+  .playWrapper {
+    position: relative;
+    width: 524px;
+    margin: auto;
+    padding: 0px 0 20px 0;
+    border-radius: 17px;
+    background: rgba(255,255,255, 1);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+
+    .title{
+      background: url('//sss.qingting.fm/neo/MemberTitle@2x.png');
+      background-size: cover;
+      background-repeat: no-repeat; 
+      display: flex;
+      height: 80px;
+      font-size: 24px;
+      color: #7E5C32;
+      text-align: center;
+      line-height: 24px;
+      justify-content: center;
+      align-items: center;
+      @media
+      (-webkit-min-device-pixel-ratio: 1.5),
+      (min-resolution: 1.5dppx) {
+        background: url('//sss.qingting.fm/neo/MemberTitle@3x.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+      } 
+    }
+    .mobileTitle{
+      display: flex;
+      height: 80px;
+      font-size: 24px;
+      color: #F63D3D;
+      text-align: center;
+      line-height: 24px;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    .playbottomWrapper {
+      display: flex;
+      flex-direction: row;
+      padding-left: 40px;
+      padding-right: 40px;
+      .playLeftSec {   
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .playQR {
+          background: url('//sss.qingting.fm/neo/app_QR_img@2x.png');
+          background-size: cover;
+          background-repeat: no-repeat; 
+          display: flex;
+          flex: 1;
+          width: 95%;
+          height: 200px;
+          @media
+          (-webkit-min-device-pixel-ratio: 1.5),
+          (min-resolution: 1.5dppx) {
+            background: url('//sss.qingting.fm/neo/app_QR_img@3x.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+          } 
+        }
+        .mobileQR {
+          display: flex;
+          flex: 1;
+          height: 100px;
+          align-items: center;
+          justify-content: center;
+          .QRimg {
+            display: flex;
+            flex: 1;
+            height: 90%; 
+          }
+        }
+        .bottomNotice {
+          font-size: 16px;
+          color: #4A4A4A;
+          text-align: center;
+          line-height: 14px;
+          display: flex;
+        }
+        & + .playRightSec {
+          margin-left: 15px;
+        }
+      }
+      .playRightSec  {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 10px;
+
+        .firstContent {
+          font-size: 15px;
+          color: #4A4A4A;
+        }
+        .firstNotice {
+          line-height: 23px;
+          font-size: 13px;
+          color: #999999;
+        }
+        .rightContent {
+          font-size: 15px;
+          color: #4A4A4A;
+          line-height: 28px;
+          position: relative;
+          .scanIcon {
+            background: url('//sss.qingting.fm/neo/scan@2x.png');
+            background-size: cover;
+            background-repeat: no-repeat; 
+            display: flex;
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            right: -24px;
+            top: 5px;
+            @media
+            (-webkit-min-device-pixel-ratio: 1.5),
+            (min-resolution: 1.5dppx) {
+              background: url('//sss.qingting.fm/neo/scan@3x.png');
+              background-size: contain;
+              background-repeat: no-repeat;
+            } 
+          }
+        }
+        .downloadBtn {
+          width: 120px;
+          height: 36px;
+          text-align: right;
+          padding-right: 20px;
+          position: relative;
+          cursor: pointer;
+          display: flex;
+          font-size: 15px;
+          color: #FD5353;
+          letter-spacing: 0;
+          line-height: 14px;
+          background: #FFFFFF;
+          border: 1px solid #CDCCCD;
+          border-radius: 6px;
+          align-items: center;
+          justify-content: flex-end;
+          .downloadIcon {
+            background: url('//sss.qingting.fm/neo/Download@2x.png');
+            background-size: cover;
+            background-repeat: no-repeat; 
+            display: flex;
+            flex: 1;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            left: 13px;
+            top: 8px;
+            @media
+            (-webkit-min-device-pixel-ratio: 1.5),
+            (min-resolution: 1.5dppx) {
+              background: url('//sss.qingting.fm/neo/Download@3x.png');
+              background-size: contain;
+              background-repeat: no-repeat;
+            } 
+          }
+        }
+      }
+    }
+  }
+
+  .wrapper .vertLine {
+    position: absolute;
+    width: 3px;
+    height: 30px;
+    right: 18.5px;
+    top: 37px;
+    border: none;
+    border-right: 1px solid white;
+    margin: 0;
+    padding: 0;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .close {
+    position: absolute;
+    right: 10px;
+    top: -67px;
+    cursor: pointer;
+    outline: none;
+  }
+  .shareDownloadClose {
+    position: absolute;
+    right: -10px;
+    top: -15px;
+    cursor: pointer;
+    outline: none;
+  }
+  .img {
+    width: 150px;
+    height: 150px;
+  }
+  .bottomWrapper {
+    display: flex;
+    flex-direction: row;
+    padding-left: 40px;
+    padding-right: 40px;
+    .leftSec {
+      display: flex;
+      flex: 1;
+      .shareScene {
+        height: 200px;
+        display: flex;
+        flex: 1;
+      }
+      
+    }
+    .rightSec {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      .QR {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex: 1;
+      }
+    }
+  }
+}
+.shareOverlayRoot.visible {
+  display: table;
+}
+
+.playButtonRoot {
+  :global .sprite-list-play {
+    display: inline-block;
+  }
+  :global .sprite-list-play-hover{
+    display: none;
+  }
+}
+
+.playButtonRoot.playing {
+  :global .sprite-list-play-hover {
+    display: inline-block;
+  }
+  :global .sprite-list-play {
+    display: none;
+  }
+}
+
+.playButtonRoot:hover {
+  :global .sprite-list-play {
+    display: none;
+  }
+  :global .sprite-list-play-hover {
+    display: inline-block;
+  }
+}
+
